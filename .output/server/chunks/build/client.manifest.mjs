@@ -1,10 +1,10 @@
 const client_manifest = {
-  "_CK9Btc2y.js": {
+  "_BGuDynKC.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CK9Btc2y.js",
+    "file": "BGuDynKC.js",
     "name": "vue.8fc199ce",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -43,13 +43,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BVR4lmJs.js",
+    "file": "CQphgC3P.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CK9Btc2y.js"
+      "_BGuDynKC.js"
     ],
     "css": [
       "error-404.DXySnQZL.css"
@@ -66,12 +66,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "KgeYp_bf.js",
+    "file": "DH-eBebU.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CK9Btc2y.js",
+      "_BGuDynKC.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
@@ -89,7 +89,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DeN8PLg7.js",
+    "file": "DqM5Ey1q.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -98,11 +98,11 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/components/error-500.vue"
     ],
     "css": [
-      "entry.CmP9KE73.css"
+      "entry.6Kza1z0R.css"
     ]
   },
-  "entry.CmP9KE73.css": {
-    "file": "entry.CmP9KE73.css",
+  "entry.6Kza1z0R.css": {
+    "file": "entry.6Kza1z0R.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -112,13 +112,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DwpFV-eV.js",
+    "file": "ClSivGW5.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CK9Btc2y.js"
+      "_BGuDynKC.js"
     ],
     "css": [
       "index.pV7CE786.css"
