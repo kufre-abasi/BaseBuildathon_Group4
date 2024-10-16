@@ -17,7 +17,8 @@ export default {
       fontFamily: {
         Poppins: ['Poppins', 'sans-serif'],
         Inter: ['Inter', 'system-ui'],
-        Mulish: ['Mulish', 'sans-serif']
+        Mulish: ['Mulish', 'sans-serif'],
+        DMSans:["DM Sans", 'sans-serif']
       },
 
       colors: {
