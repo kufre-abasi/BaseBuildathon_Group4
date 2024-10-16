@@ -1,14 +1,21 @@
 const client_manifest = {
-  "_CsztzTr-.js": {
+  "_CK9Btc2y.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CsztzTr-.js",
+    "file": "CK9Btc2y.js",
     "name": "vue.8fc199ce",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
+  },
+  "assets/img/CertCard.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "CertCard.B-Iay2Dy.png",
+    "src": "assets/img/CertCard.png"
   },
   "assets/img/Onboardingscreen.png": {
     "resourceType": "image",
@@ -36,13 +43,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "zMNBGtDO.js",
+    "file": "BVR4lmJs.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CsztzTr-.js"
+      "_CK9Btc2y.js"
     ],
     "css": [
       "error-404.DXySnQZL.css"
@@ -59,12 +66,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C8F1xo95.js",
+    "file": "KgeYp_bf.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CsztzTr-.js",
+      "_CK9Btc2y.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
@@ -82,7 +89,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DGFeT0nK.js",
+    "file": "DeN8PLg7.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -91,11 +98,11 @@ const client_manifest = {
       "node_modules/nuxt/dist/app/components/error-500.vue"
     ],
     "css": [
-      "entry.DlmDmFPv.css"
+      "entry.CmP9KE73.css"
     ]
   },
-  "entry.DlmDmFPv.css": {
-    "file": "entry.DlmDmFPv.css",
+  "entry.CmP9KE73.css": {
+    "file": "entry.CmP9KE73.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -105,25 +112,26 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BOsa1_V3.js",
+    "file": "DwpFV-eV.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CsztzTr-.js"
+      "_CK9Btc2y.js"
     ],
     "css": [
-      "index.Dpyhs9SW.css"
+      "index.pV7CE786.css"
     ],
     "assets": [
       "web3school.DTSE-Vc8.svg",
       "Roundelipse.DLwLb7x7.png",
+      "CertCard.B-Iay2Dy.png",
       "Onboardingscreen.CCIuGlHy.png"
     ]
   },
-  "index.Dpyhs9SW.css": {
-    "file": "index.Dpyhs9SW.css",
+  "index.pV7CE786.css": {
+    "file": "index.pV7CE786.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -136,6 +144,12 @@ const client_manifest = {
   },
   "Roundelipse.DLwLb7x7.png": {
     "file": "Roundelipse.DLwLb7x7.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "CertCard.B-Iay2Dy.png": {
+    "file": "CertCard.B-Iay2Dy.png",
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png"
