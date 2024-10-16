@@ -1,7 +1,5 @@
 <template>
-  <div class="h-full w-full">
-    <component :is="currentTab.component" @next="next" />
-  </div>
+  <component :is="currentTab.component" @next="next" :active="currentTab.slug" />
 </template>
 <script lang="ts" setup>
 import StepOne from "~/components/SplashScreen/Step/StepOne.vue";

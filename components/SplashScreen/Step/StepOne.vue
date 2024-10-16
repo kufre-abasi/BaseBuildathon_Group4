@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-full w-full background flex py-16 bg-no-repeat object-center object-cover flex-col"
+    class="h-full w-full background flex py-10 pb-20 bg-no-repeat object-center object-cover flex-col"
   >
     <div class="container w-full flex flex-col justify-between h-full">
       <div class="flex justify-start w-full">
@@ -12,17 +12,17 @@
       </div>
       <div class="flex justify-center my-10 w-full">
         <img
-          class="h-[360px]"
+          class="h-[250px]"
           src="@/assets/img/Roundelipse.png"
           alt=" BaseBuildathon_Group4 LOGO"
         />
       </div>
       <div
-        class="mt-10 flex w-full flex-col gap-[24px] items-center relative justify-center"
+        class="mt-10 flex w-full flex-col gap-[14px] items-center relative justify-center"
       >
         <UIIconRoundelipse class="absolute bottom-0 top-[5px]" />
         <div
-          class="flex flex-col gap-[16px] mt-12 p-4 z-10 w-full backdrop-blur-[20px] bg-white/10 rounded-[8px] border-[#FAFAFA1A] border-[1px]"
+          class="flex flex-col gap-[14px] mt-10 p-4 z-10 w-full backdrop-blur-[20px] bg-white/10 rounded-[8px] border-[#FAFAFA1A] border-[1px]"
         >
           <p class="text-[#FAFAFA] text-[14px] leading-[16.8px]">
             Welcome to Web3 School
@@ -38,6 +38,16 @@
             </p>
           </div>
         </div>
+        <div class="flex justify-center flex-row z-10 gap-[7px]">
+          <div
+            class="h-[4px] p-[4px] w-[10vh] rounded-[16px]"
+            :class="active === 'step-one' ? 'bg-[#FAFAFA]' : 'bg-[#64707D]'"
+          ></div>
+          <div
+            class="h-[4px] p-[4px] w-[10vh] rounded-[16px]"
+            :class="active === 'step-two' ? 'bg-[#FAFAFA]' : 'bg-[#64707D]'"
+          ></div>
+        </div>
         <button
           @click="next"
           class="w-full btn-brand Gradient-button z-10 !text-[#16094A] !rounded-[8px] !py-[16px] text-[14px] font-bold"
@@ -50,6 +60,7 @@
 </template>
 <script lang="ts" setup>
 const emit = defineEmits(["next"]);
+defineProps({ active: null });
 
 const next = (_id: any) => {
   emit("next", _id);
