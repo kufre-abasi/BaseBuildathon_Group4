@@ -1,53 +1,51 @@
 <template>
-  <div
-    class="h-full w-full background flex py-16 bg-no-repeat object-center object-cover flex-col"
-  >
-    <div class="container w-full flex flex-col justify-between h-full">
-      <div class="flex justify-start w-full">
-        <img
-          class="h-[28px]"
-          src="@/assets/web3school.svg"
-          alt=" BaseBuildathon_Group4 LOGO"
-        />
-      </div>
-      <div class="flex justify-center my-10 w-full">
-        <img
-          class="h-[360px]"
-          src="@/assets/img/Roundelipse.png"
-          alt=" BaseBuildathon_Group4 LOGO"
-        />
-      </div>
-      <div
-        class="mt-10 flex w-full flex-col gap-[24px] items-center relative justify-center"
-      >
-        <UIIconRoundelipse class="absolute bottom-0 top-[5px]" />
-        <div
-          class="flex flex-col gap-[16px] mt-12 p-4 z-10 w-full backdrop-blur-[20px] bg-white/10 rounded-[8px] border-[#FAFAFA1A] border-[1px]"
-        >
-          <p class="text-[#FAFAFA] text-[14px] leading-[16.8px]">
-            Welcome to Web3 School
-          </p>
-          <div class="flex flex-col gap-[4px]">
-            <h3 class="text-[24px] leading-[31.25px] text-[#FAFAFA] !font-bold">
-              <b class="text-[#CBFCC3]">Learn</b> about
-              <b class="text-[#CBFCC3]">Web3</b> in one place
-            </h3>
-            <p class="text-[#FAFAFA] leading-[18.23px] font-normal text-[14px]">
-              Hey newbie! It’s time to learn Web 3 from the list of our curated video and
-              guides from global experts.
-            </p>
-          </div>
-        </div>
-        <button
-          class="w-full btn-brand Gradient-button z-10 !text-[#16094A] !rounded-[8px] !py-[16px] text-[14px] font-bold"
-        >
-          Next
-        </button>
-      </div>
-    </div>
+  <div class="h-full w-full">
+    <component :is="currentTab.component" @next="next" />
   </div>
 </template>
-<script></script>
+<script lang="ts" setup>
+import StepOne from "~/components/SplashScreen/Step/StepOne.vue";
+import StepTwo from "~/components/SplashScreen/Step/StepTwo.vue";
+const tabs = ref([
+  {
+    name: "StepOne",
+    component: StepOne,
+    slug: "step-one",
+  },
+  {
+    name: "StepTwo",
+    component: StepTwo,
+    slug: "step-two",
+  },
+  {
+    name: "StepThree",
+    component: StepTwo,
+    slug: "step-three",
+  },
+]);
+
+const currentTab = ref({
+  name: "StepOne",
+  component: StepOne,
+  slug: "step-one",
+});
+const changeCurrentTab = (value: any) => (currentTab.value = value);
+const next = (data?: any) => {
+  if (currentTab.value.slug == "step-one") {
+    changeCurrentTab({
+      name: "StepTwo",
+      component: StepTwo,
+      slug: "step-two",
+    });
+  } else if (currentTab.value.slug == "step-two") {
+    changeCurrentTab({
+      name: "StepOne",
+      component: StepOne,
+      slug: "step-one",
+    });
+  }
+};
+</script>
 <style>
 .background {
   background-blend-mode: overlay;
