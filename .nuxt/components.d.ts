@@ -2,13 +2,16 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
-      'LayoutFooter': typeof import("../components/Layout/Footer/index.vue")['default']
+      'Dashboard': typeof import("../components/Dashboard/index.vue")['default']
+    'LayoutDashboard': typeof import("../components/Layout/Dashboard.vue")['default']
+    'LayoutFooter': typeof import("../components/Layout/Footer/index.vue")['default']
     'LayoutNavBarDashboardSidebar': typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
     'LayoutNavBar': typeof import("../components/Layout/NavBar/Index.vue")['default']
     'LayoutNavBarSidebarItem': typeof import("../components/Layout/NavBar/SidebarItem.vue")['default']
     'LayoutSplashScreen': typeof import("../components/Layout/SplashScreen.vue")['default']
     'Layout': typeof import("../components/Layout/index.vue")['default']
     'SplashScreenStepOne': typeof import("../components/SplashScreen/Step/StepOne.vue")['default']
+    'SplashScreenStepThree': typeof import("../components/SplashScreen/Step/StepThree.vue")['default']
     'SplashScreenStepTwo': typeof import("../components/SplashScreen/Step/StepTwo.vue")['default']
     'SplashScreen': typeof import("../components/SplashScreen/index.vue")['default']
     'UIButton': typeof import("../components/UI/Button/index.vue")['default']
@@ -999,13 +1002,16 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyLayoutFooter': typeof import("../components/Layout/Footer/index.vue")['default']
+      'LazyDashboard': typeof import("../components/Dashboard/index.vue")['default']
+    'LazyLayoutDashboard': typeof import("../components/Layout/Dashboard.vue")['default']
+    'LazyLayoutFooter': typeof import("../components/Layout/Footer/index.vue")['default']
     'LazyLayoutNavBarDashboardSidebar': typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
     'LazyLayoutNavBar': typeof import("../components/Layout/NavBar/Index.vue")['default']
     'LazyLayoutNavBarSidebarItem': typeof import("../components/Layout/NavBar/SidebarItem.vue")['default']
     'LazyLayoutSplashScreen': typeof import("../components/Layout/SplashScreen.vue")['default']
     'LazyLayout': typeof import("../components/Layout/index.vue")['default']
     'LazySplashScreenStepOne': typeof import("../components/SplashScreen/Step/StepOne.vue")['default']
+    'LazySplashScreenStepThree': typeof import("../components/SplashScreen/Step/StepThree.vue")['default']
     'LazySplashScreenStepTwo': typeof import("../components/SplashScreen/Step/StepTwo.vue")['default']
     'LazySplashScreen': typeof import("../components/SplashScreen/index.vue")['default']
     'LazyUIButton': typeof import("../components/UI/Button/index.vue")['default']
@@ -2002,6 +2008,8 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const Dashboard: typeof import("../components/Dashboard/index.vue")['default']
+export const LayoutDashboard: typeof import("../components/Layout/Dashboard.vue")['default']
 export const LayoutFooter: typeof import("../components/Layout/Footer/index.vue")['default']
 export const LayoutNavBarDashboardSidebar: typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
 export const LayoutNavBar: typeof import("../components/Layout/NavBar/Index.vue")['default']
@@ -2009,6 +2017,7 @@ export const LayoutNavBarSidebarItem: typeof import("../components/Layout/NavBar
 export const LayoutSplashScreen: typeof import("../components/Layout/SplashScreen.vue")['default']
 export const Layout: typeof import("../components/Layout/index.vue")['default']
 export const SplashScreenStepOne: typeof import("../components/SplashScreen/Step/StepOne.vue")['default']
+export const SplashScreenStepThree: typeof import("../components/SplashScreen/Step/StepThree.vue")['default']
 export const SplashScreenStepTwo: typeof import("../components/SplashScreen/Step/StepTwo.vue")['default']
 export const SplashScreen: typeof import("../components/SplashScreen/index.vue")['default']
 export const UIButton: typeof import("../components/UI/Button/index.vue")['default']
@@ -2999,6 +3008,8 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+export const LazyDashboard: typeof import("../components/Dashboard/index.vue")['default']
+export const LazyLayoutDashboard: typeof import("../components/Layout/Dashboard.vue")['default']
 export const LazyLayoutFooter: typeof import("../components/Layout/Footer/index.vue")['default']
 export const LazyLayoutNavBarDashboardSidebar: typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
 export const LazyLayoutNavBar: typeof import("../components/Layout/NavBar/Index.vue")['default']
@@ -3006,6 +3017,7 @@ export const LazyLayoutNavBarSidebarItem: typeof import("../components/Layout/Na
 export const LazyLayoutSplashScreen: typeof import("../components/Layout/SplashScreen.vue")['default']
 export const LazyLayout: typeof import("../components/Layout/index.vue")['default']
 export const LazySplashScreenStepOne: typeof import("../components/SplashScreen/Step/StepOne.vue")['default']
+export const LazySplashScreenStepThree: typeof import("../components/SplashScreen/Step/StepThree.vue")['default']
 export const LazySplashScreenStepTwo: typeof import("../components/SplashScreen/Step/StepTwo.vue")['default']
 export const LazySplashScreen: typeof import("../components/SplashScreen/index.vue")['default']
 export const LazyUIButton: typeof import("../components/UI/Button/index.vue")['default']

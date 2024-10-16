@@ -4,6 +4,8 @@
 <script lang="ts" setup>
 import StepOne from "~/components/SplashScreen/Step/StepOne.vue";
 import StepTwo from "~/components/SplashScreen/Step/StepTwo.vue";
+import StepThree from "~/components/SplashScreen/Step/StepThree.vue";
+const router = useRouter();
 const tabs = ref([
   {
     name: "StepOne",
@@ -17,7 +19,7 @@ const tabs = ref([
   },
   {
     name: "StepThree",
-    component: StepTwo,
+    component: StepThree,
     slug: "step-three",
   },
 ]);
@@ -37,10 +39,12 @@ const next = (data?: any) => {
     });
   } else if (currentTab.value.slug == "step-two") {
     changeCurrentTab({
-      name: "StepOne",
-      component: StepOne,
-      slug: "step-one",
+      name: "StepThree",
+      component: StepThree,
+      slug: "step-three",
     });
+  } else {
+    router.push("/dashoard");
   }
 };
 </script>
