@@ -50,13 +50,13 @@
       </div>
       <div
         :class="
-          route.path.startsWith(`/ `)
+          route.path.startsWith(`/track-progress`)
             ? ' border-[#CBFCC3] border-t-[2px] text-[#CBFCC3]'
             : 'text-[#A4ADB6]'
         "
         class="py-[24px]"
       >
-        <NuxtLink to="/" class="flex flex-col items-center gap-[8px]">
+        <NuxtLink to="/track-progress" class="flex flex-col items-center gap-[8px]">
           <UIIconRankingIcon /><span class="text-[12px] leading-[14.4px] font-semibold"
             >Track progress</span
           ></NuxtLink
@@ -64,13 +64,13 @@
       </div>
       <div
         :class="
-          route.path.startsWith(`/ `)
+          route.path.startsWith(`/module`)
             ? ' border-[#CBFCC3] border-t-[2px] text-[#CBFCC3]'
             : 'text-[#A4ADB6]'
         "
         class="py-[24px]"
       >
-        <NuxtLink to="/" class="flex flex-col items-center gap-[8px]">
+        <NuxtLink to="/module" class="flex flex-col items-center gap-[8px]">
           <UIIconNoteIcon /><span class="text-[12px] leading-[14.4px] font-semibold"
             >Module</span
           ></NuxtLink
@@ -78,13 +78,13 @@
       </div>
       <div
         :class="
-          route.path.startsWith(`/ `)
+          route.path.startsWith(`/profile`)
             ? ' border-[#CBFCC3] border-t-[2px] text-[#CBFCC3]'
             : 'text-[#A4ADB6]'
         "
         class="py-[24px]"
       >
-        <NuxtLink to="/" class="flex flex-col items-center gap-[8px]">
+        <NuxtLink to="/profile" class="flex flex-col items-center gap-[8px]">
           <UIIconProfileIcon /><span class="text-[12px] leading-[14.4px] font-semibold"
             >Profile</span
           ></NuxtLink
