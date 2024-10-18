@@ -3,7 +3,7 @@
     class="container h-screen background bg-no-repeat object-center z-50 object-cover overflow-hidden justify-between relative lg:max-w-[575px] w-full !px-0 flex items-center flex-col"
   >
     <div
-      class="bg-[#16094A1A] p-[24px] absolute flex justify-between items-center top-0 w-full"
+      class="bg-[#16094A1A] p-[24px] card-blur absolute flex justify-between items-center top-0 w-full"
     >
       <div class="flex items-center gap-4">
         <img

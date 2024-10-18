@@ -100,9 +100,6 @@
 </template>
 <script setup lang="ts"></script>
 <style>
-.card-blur {
-  backdrop-filter: blur(20px);
-}
 /* .banner-img {
   background-blend-mode: overlay;
   background-image: url("@/components/UI/Icon/HeroBannerImage.svg");
