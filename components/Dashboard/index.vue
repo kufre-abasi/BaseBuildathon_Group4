@@ -8,7 +8,7 @@
       </h3>
     </div>
     <div
-      class="bg-[#16094A] rounded-[16px] relative object-cover bg-no-repeat bg-right-bottom p-8 h-[26vh]"
+      class="bg-[#16094A] rounded-[16px] relative object-cover bg-no-repeat -z-10 bg-right-bottom p-8 h-[26vh]"
     >
       <UIIconHeroBannerImage class="absolute bottom-0 -right-8" />
       <div
@@ -23,7 +23,7 @@
         </div>
         <h4 class="text-[#FAFAFA] text-[18px] font-semibold">No active module yet</h4>
         <button
-          class="btn-brand Gradient-button z-10 !text-[#16094A] w-fit !rounded-[8px] !py-[10px] !px-[12px] !text-[21px] font-bold"
+          class="btn-brand Gradient-button !text-[#16094A] w-fit !rounded-[8px] !py-[10px] !px-[12px] !text-[21px] font-bold"
         >
           Start a module
         </button>
@@ -34,20 +34,65 @@
         Choose a module
       </h2>
       <div class="flex flex-row gap-[8px]">
-        <div
+        <button
           class="bg-[#CBFCC3] border-[0.5px] text-[#16094A] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
         >
           All
-        </div>
-        <div
+        </button>
+        <button
           class="border-[#CBFCC3] border-[0.5px] text-[#CBFCC3] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
         >
           Beginner
-        </div>
-        <div
+        </button>
+        <button
           class="border-[#CBFCC3] border-[0.5px] text-[#CBFCC3] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
         >
           Advance
+        </button>
+      </div>
+      <div class="flex flex-col gap-[16px]">
+        <div class="grid grid-cols-2 h-full gap-[16px] w-full">
+          <div class="flex flex-col gap-[16px] h-full bg-brand p-4 rounded-[16px] w-full">
+            f
+          </div>
+          <div class="flex flex-col gap-[16px] w-full">
+            <div
+              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
+            >
+              f
+            </div>
+            <div
+              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
+            >
+              f
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row gap-[16px] w-full">
+          <div class="flex flex-col gap-[16px] w-full">
+            <div
+              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
+            >
+              f
+            </div>
+            <div
+              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
+            >
+              f
+            </div>
+          </div>
+          <div class="flex flex-col gap-[16px] w-full">
+            <div
+              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
+            >
+              f
+            </div>
+            <div
+              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
+            >
+              f
+            </div>
+          </div>
         </div>
       </div>
     </div>

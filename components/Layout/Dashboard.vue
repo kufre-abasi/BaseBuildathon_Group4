@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container h-screen background bg-no-repeat object-center object-cover overflow-hidden justify-between relative lg:max-w-[575px] w-full !px-0 flex items-center flex-col"
+    class="container h-screen background bg-no-repeat object-center z-50 object-cover overflow-hidden justify-between relative lg:max-w-[575px] w-full !px-0 flex items-center flex-col"
   >
     <div
       class="bg-[#16094A1A] p-[24px] absolute flex justify-between items-center top-0 w-full"
@@ -32,7 +32,7 @@
 
     <div class="overflow-y-auto w-full h-full px-[4px]"><slot></slot></div>
     <div
-      class="bg-[#16094A] px-[24px] rounded-t-[20px] border-[#CBFCC31A] flex flex-row justify-between absolute bottom-0 border-t-[1px] w-full"
+      class="bg-[#16094A] px-[24px] rounded-t-[20px] border-[#CBFCC31A] z-50 flex flex-row justify-between absolute bottom-0 border-t-[1px] w-full"
     >
       <div
         :class="
