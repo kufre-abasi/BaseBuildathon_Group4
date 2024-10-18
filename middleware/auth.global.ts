@@ -3,13 +3,13 @@ export default defineNuxtRouteMiddleware((to, from) => {
         return navigateTo("/dashboard");
     }
 
-    const token = useCookie("_auth_token");
+    // const token = useCookie("_auth_token");
 
-    if (to.path.startsWith("/auth") && token.value) {
-        return navigateTo('/dashboard');
-    }
+    // if (to.path.startsWith("/auth") && token.value) {
+    //     return navigateTo('/dashboard');
+    // }
 
-    if (!to.path.startsWith("/auth") && !token.value) {
-        return navigateTo("/auth");
-    }
+    // if (!to.path.startsWith("/auth") && !token.value) {
+    //     return navigateTo("/auth");
+    // }
 });
