@@ -9,7 +9,7 @@
     </div>
     <div
        class="bg-[#16094A] rounded-[16px] relative   object-cover bg-no-repeat bg-right-bottom p-8 h-[40vh]"
-    ><UIIconHeroBannerImage class='absolute bottom-0 -right-1'/>
+    ><UIIconHeroBannerImage class='absolute bottom-0  -right-8'/>
       <div
         class="border-[#FAFAFA80] border-[0.5px] h-full bg-[#CBFCC31A] card-blur rounded-[8px] p-[12px]"
       ></div>
