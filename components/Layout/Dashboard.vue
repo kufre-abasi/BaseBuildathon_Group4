@@ -30,7 +30,7 @@
       <button><UIIconCloseSquare /></button>
     </div>
 
-    <div class="overflow-y-auto w-full h-full"><slot></slot></div>
+    <div class="overflow-y-auto w-full h-full px-[4px]"><slot></slot></div>
     <div
       class="bg-[#16094A] px-[24px] rounded-t-[20px] border-[#CBFCC31A] flex flex-row justify-between absolute bottom-0 border-t-[1px] w-full"
     >

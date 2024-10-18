@@ -8,11 +8,26 @@
       </h3>
     </div>
     <div
-       class="bg-[#16094A] rounded-[16px] relative   object-cover bg-no-repeat bg-right-bottom p-8 h-[40vh]"
-    ><UIIconHeroBannerImage class='absolute bottom-0  -right-8'/>
+      class="bg-[#16094A] rounded-[16px] relative object-cover bg-no-repeat bg-right-bottom p-8 h-[26vh]"
+    >
+      <UIIconHeroBannerImage class="absolute bottom-0 -right-8" />
       <div
-        class="border-[#FAFAFA80] border-[0.5px] h-full bg-[#CBFCC31A] card-blur rounded-[8px] p-[12px]"
-      ></div>
+        class="border-[#FAFAFA80] border-[0.5px] h-full bg-[#CBFCC31A] flex flex-col justify-between card-blur rounded-[8px] p-[22px]"
+      >
+        <div>
+          <div
+            class="bg-[#E4626F] rounded-full px-[8px] py-[4px] text-[#16094A] w-fit text-[10px] font-normal"
+          >
+            Ongoing Module
+          </div>
+        </div>
+        <h4 class="text-[#FAFAFA] text-[18px] font-semibold">No active module yet</h4>
+        <button
+          class="btn-brand Gradient-button z-10 !text-[#16094A] w-fit !rounded-[8px] !py-[10px] !px-[12px] !text-[21px] font-bold"
+        >
+          Start a module
+        </button>
+      </div>
     </div>
   </div>
 </template>
