@@ -30,7 +30,7 @@
       <button><UIIconCloseSquare /></button>
     </div>
 
-    <div class="overflow-y-auto h-full"><slot></slot></div>
+    <div class="overflow-y-auto w-full h-full"><slot></slot></div>
     <div
       class="bg-[#16094A] px-[24px] rounded-t-[20px] border-[#CBFCC31A] flex flex-row justify-between absolute bottom-0 border-t-[1px] w-full"
     >
@@ -50,7 +50,7 @@
       </div>
       <div
         :class="
-          route.path.startsWith(`/dashboard`)
+          route.path.startsWith(`/ `)
             ? ' border-[#CBFCC3] border-t-[2px] text-[#CBFCC3]'
             : 'text-[#A4ADB6]'
         "
@@ -64,7 +64,7 @@
       </div>
       <div
         :class="
-          route.path.startsWith(`/dashboard`)
+          route.path.startsWith(`/ `)
             ? ' border-[#CBFCC3] border-t-[2px] text-[#CBFCC3]'
             : 'text-[#A4ADB6]'
         "
@@ -78,7 +78,7 @@
       </div>
       <div
         :class="
-          route.path.startsWith(`/dashboard`)
+          route.path.startsWith(`/ `)
             ? ' border-[#CBFCC3] border-t-[2px] text-[#CBFCC3]'
             : 'text-[#A4ADB6]'
         "
