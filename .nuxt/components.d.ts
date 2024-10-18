@@ -3,6 +3,9 @@ import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
       'Dashboard': typeof import("../components/Dashboard/index.vue")['default']
+    'DashboardModuleAdvance': typeof import("../components/Dashboard/module/Advance.vue")['default']
+    'DashboardModuleAll': typeof import("../components/Dashboard/module/All.vue")['default']
+    'DashboardModuleBeginner': typeof import("../components/Dashboard/module/Beginner.vue")['default']
     'LayoutDashboard': typeof import("../components/Layout/Dashboard.vue")['default']
     'LayoutFooter': typeof import("../components/Layout/Footer/index.vue")['default']
     'LayoutNavBarDashboardSidebar': typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
@@ -38,6 +41,7 @@ interface _GlobalComponents {
     'UIIconProfileIcon': typeof import("../components/UI/Icon/ProfileIcon.vue")['default']
     'UIIconRankingIcon': typeof import("../components/UI/Icon/RankingIcon.vue")['default']
     'UIIconRoundelipse': typeof import("../components/UI/Icon/Roundelipse.vue")['default']
+    'UIIconTag': typeof import("../components/UI/Icon/Tag.vue")['default']
     'UIIconToggle': typeof import("../components/UI/Icon/Toggle.vue")['default']
     'UIIconTwitterIcon': typeof import("../components/UI/Icon/TwitterIcon.vue")['default']
     'UIIconWave': typeof import("../components/UI/Icon/Wave.vue")['default']
@@ -1009,6 +1013,9 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyDashboard': typeof import("../components/Dashboard/index.vue")['default']
+    'LazyDashboardModuleAdvance': typeof import("../components/Dashboard/module/Advance.vue")['default']
+    'LazyDashboardModuleAll': typeof import("../components/Dashboard/module/All.vue")['default']
+    'LazyDashboardModuleBeginner': typeof import("../components/Dashboard/module/Beginner.vue")['default']
     'LazyLayoutDashboard': typeof import("../components/Layout/Dashboard.vue")['default']
     'LazyLayoutFooter': typeof import("../components/Layout/Footer/index.vue")['default']
     'LazyLayoutNavBarDashboardSidebar': typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
@@ -1044,6 +1051,7 @@ interface _GlobalComponents {
     'LazyUIIconProfileIcon': typeof import("../components/UI/Icon/ProfileIcon.vue")['default']
     'LazyUIIconRankingIcon': typeof import("../components/UI/Icon/RankingIcon.vue")['default']
     'LazyUIIconRoundelipse': typeof import("../components/UI/Icon/Roundelipse.vue")['default']
+    'LazyUIIconTag': typeof import("../components/UI/Icon/Tag.vue")['default']
     'LazyUIIconToggle': typeof import("../components/UI/Icon/Toggle.vue")['default']
     'LazyUIIconTwitterIcon': typeof import("../components/UI/Icon/TwitterIcon.vue")['default']
     'LazyUIIconWave': typeof import("../components/UI/Icon/Wave.vue")['default']
@@ -2021,6 +2029,9 @@ declare module 'vue' {
 }
 
 export const Dashboard: typeof import("../components/Dashboard/index.vue")['default']
+export const DashboardModuleAdvance: typeof import("../components/Dashboard/module/Advance.vue")['default']
+export const DashboardModuleAll: typeof import("../components/Dashboard/module/All.vue")['default']
+export const DashboardModuleBeginner: typeof import("../components/Dashboard/module/Beginner.vue")['default']
 export const LayoutDashboard: typeof import("../components/Layout/Dashboard.vue")['default']
 export const LayoutFooter: typeof import("../components/Layout/Footer/index.vue")['default']
 export const LayoutNavBarDashboardSidebar: typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
@@ -2056,6 +2067,7 @@ export const UIIconPhoneIcon: typeof import("../components/UI/Icon/PhoneIcon.vue
 export const UIIconProfileIcon: typeof import("../components/UI/Icon/ProfileIcon.vue")['default']
 export const UIIconRankingIcon: typeof import("../components/UI/Icon/RankingIcon.vue")['default']
 export const UIIconRoundelipse: typeof import("../components/UI/Icon/Roundelipse.vue")['default']
+export const UIIconTag: typeof import("../components/UI/Icon/Tag.vue")['default']
 export const UIIconToggle: typeof import("../components/UI/Icon/Toggle.vue")['default']
 export const UIIconTwitterIcon: typeof import("../components/UI/Icon/TwitterIcon.vue")['default']
 export const UIIconWave: typeof import("../components/UI/Icon/Wave.vue")['default']
@@ -3027,6 +3039,9 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyDashboard: typeof import("../components/Dashboard/index.vue")['default']
+export const LazyDashboardModuleAdvance: typeof import("../components/Dashboard/module/Advance.vue")['default']
+export const LazyDashboardModuleAll: typeof import("../components/Dashboard/module/All.vue")['default']
+export const LazyDashboardModuleBeginner: typeof import("../components/Dashboard/module/Beginner.vue")['default']
 export const LazyLayoutDashboard: typeof import("../components/Layout/Dashboard.vue")['default']
 export const LazyLayoutFooter: typeof import("../components/Layout/Footer/index.vue")['default']
 export const LazyLayoutNavBarDashboardSidebar: typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
@@ -3062,6 +3077,7 @@ export const LazyUIIconPhoneIcon: typeof import("../components/UI/Icon/PhoneIcon
 export const LazyUIIconProfileIcon: typeof import("../components/UI/Icon/ProfileIcon.vue")['default']
 export const LazyUIIconRankingIcon: typeof import("../components/UI/Icon/RankingIcon.vue")['default']
 export const LazyUIIconRoundelipse: typeof import("../components/UI/Icon/Roundelipse.vue")['default']
+export const LazyUIIconTag: typeof import("../components/UI/Icon/Tag.vue")['default']
 export const LazyUIIconToggle: typeof import("../components/UI/Icon/Toggle.vue")['default']
 export const LazyUIIconTwitterIcon: typeof import("../components/UI/Icon/TwitterIcon.vue")['default']
 export const LazyUIIconWave: typeof import("../components/UI/Icon/Wave.vue")['default']

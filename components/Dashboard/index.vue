@@ -35,70 +35,58 @@
       </h2>
       <div class="flex flex-row gap-[8px]">
         <button
-          class="bg-[#CBFCC3] border-[0.5px] text-[#16094A] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
+          v-for="(tab, index) in tabs"
+          :key="tab.slug"
+          @click="changeCurrentTab(tab)"
+          :class="
+            tab.slug == currentTab?.slug
+              ? 'bg-[#CBFCC3] border-[0.5px] text-[#16094A]'
+              : 'border-[#CBFCC3] border-[0.5px] text-[#CBFCC3] '
+          "
+          class="px-[16px] w-fit rounded-full relative leading-[16.8px] py-[8px] text-[18px] font-normal"
         >
-          All
-        </button>
-        <button
-          class="border-[#CBFCC3] border-[0.5px] text-[#CBFCC3] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
-        >
-          Beginner
-        </button>
-        <button
-          class="border-[#CBFCC3] border-[0.5px] text-[#CBFCC3] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
-        >
-          Advance
+          {{ tab.name }}
+          <UIIconTag v-if="index == 2" class="absolute -top-1 right-0" />
         </button>
       </div>
-      <div class="flex flex-col gap-[16px]">
-        <div class="grid grid-cols-2 h-full gap-[16px] w-full">
-          <div class="flex flex-col gap-[16px] h-full bg-brand p-4 rounded-[16px] w-full">
-            f
-          </div>
-          <div class="flex flex-col gap-[16px] w-full">
-            <div
-              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
-            >
-              f
-            </div>
-            <div
-              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
-            >
-              f
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-row gap-[16px] w-full">
-          <div class="flex flex-col gap-[16px] w-full">
-            <div
-              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
-            >
-              f
-            </div>
-            <div
-              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
-            >
-              f
-            </div>
-          </div>
-          <div class="flex flex-col gap-[16px] w-full">
-            <div
-              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
-            >
-              f
-            </div>
-            <div
-              class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 rounded-[16px] w-full"
-            >
-              f
-            </div>
-          </div>
-        </div>
-      </div>
+      <div><component :is="currentTab.component" /></div>
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import All from "./module/All.vue";
+import Beginner from "./module/Beginner.vue";
+import Advance from "./module/Advance.vue";
+const tabs = ref([
+  {
+    icon: null,
+    name: "All",
+    component: All,
+    slug: "all",
+  },
+  {
+    icon: null,
+    name: "Beginner",
+    component: Beginner,
+    slug: "beginner",
+  },
+  {
+    icon: null,
+    name: "Advance",
+    component: Advance,
+    slug: "advance",
+    digits: 40,
+  },
+]);
+
+const currentTab = ref({
+  icon: null,
+  name: "All",
+  component: All,
+  slug: "all",
+});
+const changeCurrentTab = (value: any) => (currentTab.value = value);
+</script>
 <style>
 /* .banner-img {
   background-blend-mode: overlay;
