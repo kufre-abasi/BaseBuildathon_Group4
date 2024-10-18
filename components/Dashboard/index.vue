@@ -8,11 +8,11 @@
       </h3>
     </div>
     <div
-      class="bg-[#16094A] rounded-[16px] relative object-cover bg-no-repeat -z-10 bg-right-bottom p-8 h-[26vh]"
+      class="bg-[#16094A] rounded-[16px] relative object-cover bg-no-repeat -z-10 bg-right-bottom p-8 h-fit"
     >
       <UIIconHeroBannerImage class="absolute bottom-0 -right-8" />
       <div
-        class="border-[#FAFAFA80] border-[0.5px] h-full bg-[#CBFCC31A] flex flex-col justify-between card-blur rounded-[8px] p-[22px]"
+        class="border-[#FAFAFA80] border-[0.5px] h-[26vh] bg-[#CBFCC31A] flex flex-col justify-between card-blur rounded-[8px] p-[22px]"
       >
         <div>
           <div
