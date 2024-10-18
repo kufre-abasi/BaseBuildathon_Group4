@@ -1,5 +1,7 @@
 <template>
-  <div class="text-white py-28 container flex flex-col gap-10">
+  <div
+    class="text-white py-28 pb-40 container flex flex-col w-full overflow-hidden gap-10"
+  >
     <div class="w-full flex justify-start text-left">
       <h3 class="text-[38px] leading-[43.6px] text-[#FAFAFA] !font-bold">
         Let’s learn <br />
@@ -29,7 +31,7 @@
         </button>
       </div>
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 overflow-hidden">
       <h2 class="text-[#FAFAFA] text-[23px] leading-[21.6px] font-semibold">
         Choose a module
       </h2>
@@ -49,7 +51,7 @@
           <UIIconTag v-if="index == 2" class="absolute -top-1 right-0" />
         </button>
       </div>
-      <div><component :is="currentTab.component" /></div>
+      <component :is="currentTab.component" />
     </div>
   </div>
 </template>
