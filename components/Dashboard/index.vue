@@ -29,6 +29,28 @@
         </button>
       </div>
     </div>
+    <div class="flex flex-col gap-4">
+      <h2 class="text-[#FAFAFA] text-[23px] leading-[21.6px] font-semibold">
+        Choose a module
+      </h2>
+      <div class="flex flex-row gap-[8px]">
+        <div
+          class="bg-[#CBFCC3] border-[0.5px] text-[#16094A] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
+        >
+          All
+        </div>
+        <div
+          class="border-[#CBFCC3] border-[0.5px] text-[#CBFCC3] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
+        >
+          Beginner
+        </div>
+        <div
+          class="border-[#CBFCC3] border-[0.5px] text-[#CBFCC3] px-[16px] w-fit rounded-full py-[4px] text-[18px] font-normal"
+        >
+          Advance
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script setup lang="ts"></script>
