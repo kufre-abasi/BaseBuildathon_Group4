@@ -1,7 +1,8 @@
 <template>
   <div class="flex flex-col w-full overflow-hidden gap-[16px]">
     <div class="grid grid-cols-2 h-full gap-[16px] w-full">
-      <div
+      <button
+        @click="goto()"
         v-for="i in modules.slice(0, 1)"
         :key="i.name"
         class="flex flex-col gap-[16px] h-full bg-brand p-6 object-cover bg-no-repeat overflow-hidden bg-cover rounded-[16px] w-full"
@@ -17,9 +18,10 @@
             5 topics
           </div>
         </div>
-      </div>
+      </button>
       <div class="flex flex-col gap-[16px] w-full">
-        <div
+        <button
+          @click="goto()"
           v-for="i in modules.slice(3, 5)"
           :key="i.name"
           class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 object-cover bg-no-repeat bg-cover overflow-hidden rounded-[16px] w-full"
@@ -35,12 +37,13 @@
               5 topics
             </div>
           </div>
-        </div>
+        </button>
       </div>
     </div>
     <div class="flex flex-row gap-[16px] w-full">
       <div class="flex flex-col gap-[16px] w-full">
-        <div
+        <button
+          @click="goto()"
           v-for="i in modules.slice(1, 3)"
           :key="i.name"
           class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 relative object-cover bg-no-repeat bg-cover overflow-hidden rounded-[16px] w-full"
@@ -58,10 +61,11 @@
               5 topics
             </div>
           </div>
-        </div>
+        </button>
       </div>
       <div class="flex flex-col gap-[16px] w-full">
-        <div
+        <button
+          @click="goto()"
           v-for="i in modules.slice(5, 7)"
           :key="i.name"
           class="flex flex-col gap-[16px] h-[20vh] bg-brand p-4 object-cover bg-no-repeat bg-cover overflow-hidden rounded-[16px] w-full"
@@ -77,7 +81,7 @@
               5 topics
             </div>
           </div>
-        </div>
+        </button>
       </div>
     </div>
   </div>
@@ -90,6 +94,8 @@ import module4 from "~/assets/module/module4.png";
 import module5 from "~/assets/module/module5.png";
 import module6 from "~/assets/module/module6.png";
 import module7 from "~/assets/module/module7.png";
+const router = useRouter();
+
 const modules = ref([
   {
     image: module1,
@@ -134,4 +140,9 @@ const modules = ref([
     topics: 5,
   },
 ]);
+const goto = () => {
+  router.push({
+    name: "course-details",
+  });
+};
 </script>

@@ -2,10 +2,12 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
-      'Dashboard': typeof import("../components/Dashboard/index.vue")['default']
+      'DashboardCourse': typeof import("../components/Dashboard/Course/index.vue")['default']
+    'Dashboard': typeof import("../components/Dashboard/index.vue")['default']
     'DashboardModuleAdvance': typeof import("../components/Dashboard/module/Advance.vue")['default']
     'DashboardModuleAll': typeof import("../components/Dashboard/module/All.vue")['default']
     'DashboardModuleBeginner': typeof import("../components/Dashboard/module/Beginner.vue")['default']
+    'LayoutCourse': typeof import("../components/Layout/Course.vue")['default']
     'LayoutDashboard': typeof import("../components/Layout/Dashboard.vue")['default']
     'LayoutFooter': typeof import("../components/Layout/Footer/index.vue")['default']
     'LayoutNavBarDashboardSidebar': typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
@@ -1012,10 +1014,12 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyDashboard': typeof import("../components/Dashboard/index.vue")['default']
+      'LazyDashboardCourse': typeof import("../components/Dashboard/Course/index.vue")['default']
+    'LazyDashboard': typeof import("../components/Dashboard/index.vue")['default']
     'LazyDashboardModuleAdvance': typeof import("../components/Dashboard/module/Advance.vue")['default']
     'LazyDashboardModuleAll': typeof import("../components/Dashboard/module/All.vue")['default']
     'LazyDashboardModuleBeginner': typeof import("../components/Dashboard/module/Beginner.vue")['default']
+    'LazyLayoutCourse': typeof import("../components/Layout/Course.vue")['default']
     'LazyLayoutDashboard': typeof import("../components/Layout/Dashboard.vue")['default']
     'LazyLayoutFooter': typeof import("../components/Layout/Footer/index.vue")['default']
     'LazyLayoutNavBarDashboardSidebar': typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
@@ -2028,10 +2032,12 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const DashboardCourse: typeof import("../components/Dashboard/Course/index.vue")['default']
 export const Dashboard: typeof import("../components/Dashboard/index.vue")['default']
 export const DashboardModuleAdvance: typeof import("../components/Dashboard/module/Advance.vue")['default']
 export const DashboardModuleAll: typeof import("../components/Dashboard/module/All.vue")['default']
 export const DashboardModuleBeginner: typeof import("../components/Dashboard/module/Beginner.vue")['default']
+export const LayoutCourse: typeof import("../components/Layout/Course.vue")['default']
 export const LayoutDashboard: typeof import("../components/Layout/Dashboard.vue")['default']
 export const LayoutFooter: typeof import("../components/Layout/Footer/index.vue")['default']
 export const LayoutNavBarDashboardSidebar: typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
@@ -3038,10 +3044,12 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+export const LazyDashboardCourse: typeof import("../components/Dashboard/Course/index.vue")['default']
 export const LazyDashboard: typeof import("../components/Dashboard/index.vue")['default']
 export const LazyDashboardModuleAdvance: typeof import("../components/Dashboard/module/Advance.vue")['default']
 export const LazyDashboardModuleAll: typeof import("../components/Dashboard/module/All.vue")['default']
 export const LazyDashboardModuleBeginner: typeof import("../components/Dashboard/module/Beginner.vue")['default']
+export const LazyLayoutCourse: typeof import("../components/Layout/Course.vue")['default']
 export const LazyLayoutDashboard: typeof import("../components/Layout/Dashboard.vue")['default']
 export const LazyLayoutFooter: typeof import("../components/Layout/Footer/index.vue")['default']
 export const LazyLayoutNavBarDashboardSidebar: typeof import("../components/Layout/NavBar/DashboardSidebar.vue")['default']
