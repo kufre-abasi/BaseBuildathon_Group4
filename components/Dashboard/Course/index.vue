@@ -1,7 +1,19 @@
 <template>
-  <div class="w-full container mt-40 flex flex-col gap-[21px]">
+  <div class="w-full container mt-28 flex flex-col gap-[21px]">
     <div class="flex flex-col gap-[16px]">
-      <img src="@/assets/img/Videoplayer.png" alt="" class="w-full rounded-[12px]" />
+      <!-- <img src="@/assets/img/Videoplayer.png" alt="" class="w-full rounded-[12px]" /> -->
+      <div
+        class="bg-primary-100 lg:h-[260px] rounded-[4px] overflow-hidden flex lg:flex-row flex-col gap-10 justify-between items-center"
+      >
+        <iframe
+          class="!w-full !h-full rounded-[12px]"
+          src="https://player.vimeo.com/video/561754091?h=bf69de8a40"
+          frameborder="0"
+          allowfullscreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
 
       <div class="flex flex-col gap-[4px]">
         <h3 class="text-[#FAFAFA] text-[21px] font-semibold leading-[21.6px]">
